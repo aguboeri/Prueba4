@@ -1,0 +1,79 @@
+datos = {
+    "Entradas_MovTS": [
+        {
+            "Nombre": "",
+            "Tipo": "",
+            "Codigo_id": "",
+            "Rock": "",
+        }
+
+ 
+    ]
+
+
+}
+cantidad_entradas_MovTs = 50
+cantidad_entradas_MovSMC = 60
+
+def buscar_entrada(codigo_id: str):
+    for i in datos["Entradas_MovTS"]:
+        if i["codigo_id"] == codigo_id:
+            return i
+        
+def validar_entero_positivo(str):
+    while True:
+        numero = int(input(str))
+        if numero <= 0:
+            print("Ingrese un número positivo")
+            continue
+        return numero
+    
+while True:
+    print("MENU PRINCIPAL CONCIERTO MOVIMIENTO ORIGEN")
+    print("[1] - Comprar entrada")
+    print("[2] - Cambiar show")
+    print("[3] - Mostrar stock")
+    print("[4] - Salir")
+
+    opcion = validar_entero_positivo("Ingrese opción: ")
+    
+    if opcion == 1:
+        cantidad_entradas_MovTs == 0
+        print("No hay más entradas disponibles para este show")
+        continue
+    print("Entradas Movimiento Origen con los Tripulantes Shamanes")
+    while True:
+        nombre = input("Ingrese su nombre: ").strip()
+        while not nombre:
+            print("Error, debe ingresar un nombre")
+            nombre = input("Ingrese su nombre: ").strip()
+        tipo = validar_entero_positivo
+        cantidad_entradas_MovTs -= 1
+        datos ("cantidad_entradas_MovTs").append({
+})
+        print("Entrada comprada con éxito")
+
+    elif opcion == 2:
+def cambiar_funcion(nombre_funcion):
+    for entrada in cantidad_entradas_MovSMC
+    if entrada
+
+
+
+elif opcion == 3:
+print("Mostrar stock de entradas")
+if not datos [cantidad_entradas_MovTs]:
+    print("No hay más entradas disponibles")
+else:
+    for entrada in datos [cantidad_entradas_MovTs]:
+        print(f"Aún quedan entradas disponibles")
+    for entrada in datos [cantidad_entradas_MovSMC]:
+        print(f"Aún quedan entradas disponibles")
+
+
+elif opcion == 4:
+print ("Programa terminado")
+break
+
+else:
+print ("Debe ingresar una opción válida")
